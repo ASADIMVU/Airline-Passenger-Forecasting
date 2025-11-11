@@ -182,7 +182,7 @@ For datasets with **strong trend and seasonality**,
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/yourusername/Airline-Passenger-Forecasting.git
+   git clone https://github.com/indu-explores-data/Airline-Passenger-Forecasting.git
    cd Airline-Passenger-Forecasting
    ```
 2. Create a virtual environment (Optional):
@@ -196,13 +196,13 @@ For datasets with **strong trend and seasonality**,
    ```
 4. Launch the Jupyter Notebook:
    ```
-   jupyter notebook Airline_Passenger_Forecasting.ipynb 
+   jupyter notebook Airline Passenger Forecasting.ipynb 
 ---
 
 ## **▶️ Usage Instructions**
 
 - Load the dataset (**airline-passengers.csv** data).
-- Run the notebook `Airline_Passenger_Forecasting.ipynb` sequentially to preprocess data, visualize, and fit models.
+- Run the notebook `Airline Passenger Forecasting.ipynb` sequentially to preprocess data, visualize, and fit models.
 - Evaluate model performance using RMSE and MAE.
 - Visualize forecast results and confidence intervals.
 - Compare forecasts across ARIMA, Holt-Winters, and SARIMAX.
