@@ -196,8 +196,7 @@ For datasets with **strong trend and seasonality**,
    ```
 4. Launch the Jupyter Notebook:
    ```
-   jupyter notebook Airline_Passenger_Forecasting.ipynb
-   
+   jupyter notebook Airline_Passenger_Forecasting.ipynb 
 ---
 
 ## **▶️ Usage Instructions**
