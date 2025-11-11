@@ -39,39 +39,57 @@ Three forecasting models are implemented and compared — **Holt-Winters Exponen
 
 ---
 
-### 🧭 **Monthly Passenger Trend**
-![Monthly Airline Passengers](./Monthly%20Airline%20Passengers.png)
+### 🧭 Monthly Passenger Trend
+<p align="center">
+  <img src="Monthly Airline Passengers.png" alt="Monthly Airline Passengers" width="700">
+</p>
+
 **Description:** Displays long-term passenger growth and clear seasonal spikes in air travel.
 
 ---
 
-### 📉 **Rolling Statistics**
-![Rolling Statistics](./Rolling%20Statistics.png)
+### 📉 Rolling Statistics
+<p align="center">
+  <img src="Rolling Statistics.png" alt="Rolling Statistics" width="700">
+</p>
+
 **Description:** Shows the rolling mean and standard deviation to assess stationarity in the time series.
 
 ---
 
-### 🔍 **Decompose the Time Series**
-![Decompose the Time Series](./Decompose%20the%20Time%20Series.png)
-**Description:** Breaks the time series into **trend**, **seasonal**, and **residual** components for deeper understanding.
+### 🔍 Decompose the Time Series
+<p align="center">
+  <img src="Decompose the Time Series.png" alt="Decompose the Time Series" width="700">
+</p>
+
+**Description:** Breaks the time series into **trend**, **seasonal**, and **residual** components for deeper insight.
 
 ---
 
-### 📈 **Holt-Winters Forecast vs Actual**
-![Holt-Winters Forecast vs Actual](./Holt-Winters%20Forecast%20vs%20Actual.png)
-**Description:** Displays how the Holt-Winters model effectively captures both trend and seasonality in the data.
+### 📈 Holt-Winters Forecast vs Actual
+<p align="center">
+  <img src="Holt-Winters Forecast vs Actual.png" alt="Holt-Winters Forecast vs Actual" width="700">
+</p>
+
+**Description:** Demonstrates how the Holt-Winters model effectively captures both trend and seasonality in the dataset.
 
 ---
 
-### ⚙️ **ARIMA Forecast vs Actual**
-![ARIMA Forecast vs Actual](./ARIMA%20Forecast%20vs%20Actual.png)
-**Description:** Highlights ARIMA’s performance — captures trend but struggles with seasonality.
+### ⚙️ ARIMA Forecast vs Actual
+<p align="center">
+  <img src="ARIMA Forecast vs Actual.png" alt="ARIMA Forecast vs Actual" width="700">
+</p>
+
+**Description:** Highlights ARIMA’s performance — captures trend but fails to model the seasonal variations accurately.
 
 ---
 
-### 🌦️ **SARIMAX Forecast vs Actual**
-![SARIMAX Forecast vs Actual](./SARIMAX%20Forecast%20vs%20Actual.png)
-**Description:** Shows SARIMAX model’s superior fit, accurately modeling both seasonal and trend components.
+### 🌦️ SARIMAX Forecast vs Actual
+<p align="center">
+  <img src="SARIMAX Forecast vs Actual.png" alt="SARIMAX Forecast vs Actual" width="700">
+</p>
+
+**Description:** Shows the SARIMAX model’s superior fit, accurately modeling both seasonal and trend components.
 
 ---
 
