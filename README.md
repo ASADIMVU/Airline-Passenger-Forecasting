@@ -37,14 +37,41 @@ Three forecasting models are implemented and compared — **Holt-Winters Exponen
 
 ## 📊 **Visualizations**
 
-| Visualization | Description |
-|----------------|--------------|
-| ![Monthly Airline Passengers](./Monthly%20Airline%20Passengers.png) | **Monthly Passenger Trend:** Displays long-term growth and seasonal spikes in air travel. |
-| ![Rolling Statistics](./Rolling%20Statistics.png) | **Stationarity Check:** Shows rolling mean and standard deviation to assess series stability. |
-| ![Decompose the Time Series](./Decompose%20the%20Time%20Series.png) | **Decomposition Plot:** Separates the time series into trend, seasonal, and residual components. |
-| ![Holt-Winters Forecast vs Actual](./Holt-Winters%20Forecast%20vs%20Actual.png) | **Holt-Winters Model:** Forecast vs actual passenger counts. |
-| ![ARIMA Forecast vs Actual](./ARIMA%20Forecast%20vs%20Actual.png) | **ARIMA Model:** Trend captured but failed to model seasonality. |
-| ![SARIMAX Forecast vs Actual](./SARIMAX%20Forecast%20vs%20Actual.png) | **SARIMAX Model:** Accurate fit with both seasonal and trend components. |
+---
+
+### 🧭 **Monthly Passenger Trend**
+![Monthly Airline Passengers](./Monthly%20Airline%20Passengers.png)
+**Description:** Displays long-term passenger growth and clear seasonal spikes in air travel.
+
+---
+
+### 📉 **Rolling Statistics**
+![Rolling Statistics](./Rolling%20Statistics.png)
+**Description:** Shows the rolling mean and standard deviation to assess stationarity in the time series.
+
+---
+
+### 🔍 **Decompose the Time Series**
+![Decompose the Time Series](./Decompose%20the%20Time%20Series.png)
+**Description:** Breaks the time series into **trend**, **seasonal**, and **residual** components for deeper understanding.
+
+---
+
+### 📈 **Holt-Winters Forecast vs Actual**
+![Holt-Winters Forecast vs Actual](./Holt-Winters%20Forecast%20vs%20Actual.png)
+**Description:** Displays how the Holt-Winters model effectively captures both trend and seasonality in the data.
+
+---
+
+### ⚙️ **ARIMA Forecast vs Actual**
+![ARIMA Forecast vs Actual](./ARIMA%20Forecast%20vs%20Actual.png)
+**Description:** Highlights ARIMA’s performance — captures trend but struggles with seasonality.
+
+---
+
+### 🌦️ **SARIMAX Forecast vs Actual**
+![SARIMAX Forecast vs Actual](./SARIMAX%20Forecast%20vs%20Actual.png)
+**Description:** Shows SARIMAX model’s superior fit, accurately modeling both seasonal and trend components.
 
 ---
 
@@ -170,8 +197,7 @@ For datasets with **strong trend and seasonality**,
 4. Launch the Jupyter Notebook:
    ```
    jupyter notebook Airline_Passenger_Forecasting.ipynb
-   ``
-
+   
 ---
 
 ## **▶️ Usage Instructions**
